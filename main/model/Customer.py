@@ -1,4 +1,4 @@
-from main.main import db
+from main.Main import db
 
 
 class Customer(db.Model):
@@ -9,7 +9,10 @@ class Customer(db.Model):
     password = db.Column(db.String(55))
     phone = db.Column(db.String(55))
 
-    def __init__(self):
-        pass
-
-# TODO: set functions for search, searchById, add, update, and delete
+    def __init__(self, cid, name, address, email, password, phone):
+        self.id = cid
+        self.name = name
+        self.address = address
+        self.email = email
+        self.password = password
+        self.phone = phone
