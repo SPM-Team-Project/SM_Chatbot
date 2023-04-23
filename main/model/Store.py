@@ -1,4 +1,4 @@
-from main.main import db
+from main.Main import db
 
 
 class Store(db.Model):
