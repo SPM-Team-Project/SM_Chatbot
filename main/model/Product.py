@@ -1,4 +1,4 @@
-from main.main import db
+from main.Main import db
 
 
 class Product(db.Model):
@@ -9,8 +9,12 @@ class Product(db.Model):
     size = db.Column(db.String(5))
     color = db.Column(db.String(55))
 
-    def __init__(self):
-        pass
+    def __init__(self, pid, category, stock, price, size, color):
+        self.id = pid
+        self.category = category
+        self.stock = stock
+        self.price = price
+        self.size = size
+        self.color = color
 
-# TODO: set functions for search, searchById, add, update, and delete
     
