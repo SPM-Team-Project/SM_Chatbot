@@ -1,4 +1,4 @@
-from main.main import app
+from main.Main import app
 
 
 @app.route("")
