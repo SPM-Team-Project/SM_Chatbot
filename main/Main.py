@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 app = Flask(__name__)
 
 # adding configuration for using a sqlite database
-app.config['SQLALCHEMY_DATABASE_URI'] ="mysql+pymysql://root:password@127.0.0.1:3306/GeeksForGeeks"
+app.config['SQLALCHEMY_DATABASE_URI'] ="mysql+pymysql://root:@localhost:3306/product"
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
