@@ -1,6 +1,6 @@
 CREATE DATABASE product;
 
-CREATE TABLE CUSOMER (
+CREATE TABLE CUSTOMER (
 	c_id int(20) NOT NULL,
     c_name varchar(60) NOT NULL,
     c_adress varchar(60),

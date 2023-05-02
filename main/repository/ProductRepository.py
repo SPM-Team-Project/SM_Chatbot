@@ -1,4 +1,4 @@
-from main.model import Product
+from main.model.Modles import Product
 from main.Main import db
 
 
