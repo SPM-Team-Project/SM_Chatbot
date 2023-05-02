@@ -1,4 +1,4 @@
-from main.model import Customer
+from main.model.Modles import Customer
 from main.Main import db
 
 
@@ -13,6 +13,9 @@ def add(cid, name, address, email, password, phone):
     new_customer = Customer(cid, name, address, email, password, phone)
     db.session.add(new_customer)
 
+
+def add_by_object(customer):
+    db.session.add(customer)
 
 def update(cid, name, address, email, password, phone):
     customer = get_by_id(cid)
