@@ -1,6 +1,6 @@
 from main.Main import app
 
 
-@app.route("")
-def base():
+@app.route("/api/v1/message")
+def receive_message():
     pass

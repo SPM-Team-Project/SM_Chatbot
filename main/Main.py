@@ -1,9 +1,8 @@
 from flask import Flask
 from model.Modles import db
 from model.Modles import Store
-# TODO: make the app config to connect it to database
-app = Flask(__name__)
 
+app = Flask(__name__)
 
 
 # adding configuration for using a sqlite database
