@@ -26,7 +26,8 @@ def get_three_random_products():
         product_data = {
             'category': product.category,
             'price': product.price,
-            'size': product.size
+            'size': product.size,
+            'color': product.color
         }
         product_list.append(product_data)
     return product_list
