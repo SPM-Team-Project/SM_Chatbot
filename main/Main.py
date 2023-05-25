@@ -16,7 +16,7 @@ def create_app():
 app = create_app()
 
 
-@app.rout('/', methods=['GET'])
+@app.route('/', methods=['GET'])
 def main():
     return "hi welcome :)"
 
