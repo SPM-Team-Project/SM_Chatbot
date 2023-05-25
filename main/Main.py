@@ -3,15 +3,15 @@ from model.Modles import db
 from model.Modles import Store
 import os
 
-app = Flask(__name__)
+def create_app():
+    app = Flask(__name__)
+    # set DATABASE_URL=postgresql://smchatbotdatabase_user:YLSGBHn1SnRKmRKRpiY2ZImMjdb0CciZ@dpg-chn735vdvk4n43a6131g-a.oregon-postgres.render.com/smchatbotdatabase
+    app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+    app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+    db.init_app(app)
+    return app
 
-
-# adding configuration for using a sqlite database
-# 'mysql+pymysql://root:@localhost/product'
-# postgres://smchatbotdatabase_user:YLSGBHn1SnRKmRKRpiY2ZImMjdb0CciZ@dpg-chn735vdvk4n43a6131g-a.oregon-postgres.render.com/smchatbotdatabase
-# set DATABASE_URL=postgresql://smchatbotdatabase_user:YLSGBHn1SnRKmRKRpiY2ZImMjdb0CciZ@dpg-chn735vdvk4n43a6131g-a.oregon-postgres.render.com/smchatbotdatabase
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+app = create_app()
 
 
 @app.rout('/', methods=['GET'])
@@ -31,7 +31,6 @@ def test():
 
 if __name__ == '__main__':
     # Create the database tables
+    app = create_app()
     with app.app_context():
-        db.init_app(app)
         db.create_all()
-    app.run(debug= True)
