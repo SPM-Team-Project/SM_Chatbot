@@ -24,10 +24,12 @@ def get_three_random_products():
     product_list = []
     for index, product in enumerate(random_products, start=1):
         product_data = {
-                f'category{index}': product.category,
-                f'price{index}': product.price,
-                f'size{index}': product.size,
-                f'color{index}': product.color
+            f'p{index}': {
+                'category': product.category,
+                'price': product.price,
+                'size': product.size,
+                'color': product.color
+            }
         }
         product_list.append(product_data)
     return product_list
