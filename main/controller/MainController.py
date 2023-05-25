@@ -12,7 +12,7 @@ def receive_message():
     return {"success": True}  # Return a response indicating success
 
 
-@app.route("/chop/api/v1/randomProduct",methods=['POST'])
+@app.route("/chop/api/v1/randomProduct", methods=['POST'])
 def random_product():
     message = request.get_json()
 

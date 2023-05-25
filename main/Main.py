@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, jsonify
 from main.model.Modles import db
 from main.model.Modles import Store
 import os
@@ -28,7 +28,7 @@ def test():
         s = Store.query.filter_by(name='ss').first()
         return s.name
     except Exception as e:
-        return f"An error occurred: {str(e)}"
+        return jsonify({'error': str(e)}), 500
 
 
 if __name__ == '__main__':
