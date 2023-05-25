@@ -1,7 +1,8 @@
 from flask import Flask
-from model.Modles import db
-from model.Modles import Store
+from main.model.Modles import db
+from main.model.Modles import Store
 import os
+
 
 def create_app():
     app = Flask(__name__)
@@ -10,6 +11,7 @@ def create_app():
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
     db.init_app(app)
     return app
+
 
 app = create_app()
 
