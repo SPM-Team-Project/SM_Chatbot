@@ -1,4 +1,5 @@
 from flask_sqlalchemy import SQLAlchemy
+from flask import Flask
 db = SQLAlchemy()
 
 order_product = db.Table('order_product',
