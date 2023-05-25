@@ -1,5 +1,5 @@
-from flask import request, jsonify
-from run import app
+from flask import jsonify
+from main.main import app
 
 
 @app.route('/api', methods=['GET'])
@@ -8,5 +8,3 @@ def api():
         'message': 'Hello, World!'
     }
     return jsonify(data)
-
-
