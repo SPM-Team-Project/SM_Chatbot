@@ -22,12 +22,14 @@ def get_three_random_products():
     all_products = Modles.Product.query.all()
     random_products = random.sample(all_products, 3)
     product_list = []
-    for product in random_products:
+    for index, product in enumerate(random_products, start=1):
         product_data = {
-            'category': product.category,
-            'price': product.price,
-            'size': product.size,
-            'color': product.color
+            f'p{index}': {
+                'category': product.category,
+                'price': product.price,
+                'size': product.size,
+                'color': product.color
+            }
         }
         product_list.append(product_data)
     return product_list
