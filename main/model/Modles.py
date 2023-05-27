@@ -80,6 +80,3 @@ class Order(db.Model):
         self.o_number = o_number
         self.cusID = cusID
         self.proID = proID
-
-
-db.create_all()
