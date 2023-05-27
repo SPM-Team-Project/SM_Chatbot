@@ -26,7 +26,7 @@ def get_product_by_code(code):
         'stock': query_result.stock,
         'price': query_result.price,
         'size': query_result.size,
-        'code': query_result.code,
+        'code': query_result.p_code,
         'color': query_result.color
     }
     return product
