@@ -5,7 +5,6 @@ CREATE TABLE CUSTOMER (
     c_name varchar(60) NOT NULL,
     c_adress varchar(60),
     c_email varchar(60) NOT NULL,
-    c_password varchar(60) NOT NULL,
     c_phone varchar(60),
     PRIMARY KEY (c_id)
 	);
