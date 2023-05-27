@@ -26,3 +26,34 @@ CREATE TABLE PRODUCT(
     color varchar(60),
     PRIMARY KEY (p_id)
 )    
+
+
+
+CREATE TABLE ORDERS(
+    id int NOT NULL AUTO_INCREMENT,
+    o_date date,
+    o_shppingAddres varchar(250),
+    o_state varchar(250),
+    o_total FLOAT,
+    o_number int NOT NULL,
+    cusID int NOT NULL,
+    proID int NOT NULL,
+    PRIMARY key (id,o_number,cusID,proID)
+    FORGEING KEY (cusID) REFERENCES CUSTOMER(id)
+)
+
+
+
+ALTER TABLE product
+ADD p_code int(11),
+ADD e_storeName varchar(250),
+DROP PRIMARY KEY,
+ADD PRIMARY KEY (id,p_code)
+ADD FOREIGN key product(e_storeName) REFERENCES e_store(name);
+MODIFY COLUMN id int NOT NULL AUTO_INCREMENT;
+
+
+ALTER TABLE customer
+ADD e_storeName varchar(250),
+ADD FOREIGN KEY (e_storeName) REFERENCES e_store(name);
+
