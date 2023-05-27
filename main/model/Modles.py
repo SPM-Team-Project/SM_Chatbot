@@ -34,7 +34,7 @@ class Product(db.Model):
     size = db.Column(db.String(3))
     color = db.Column(db.String(60))
     p_code = db.Column(db.Integer, primary_key=True)
-    e_storeName = db.Column(db.String(250), db.ForeignKey("e_store.name"))
+    e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
 
 
 class Order(db.Model):
