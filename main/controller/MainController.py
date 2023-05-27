@@ -19,6 +19,7 @@ def random_products():
 
 @app.route('/marketChatbot/api/v1', methods=['POST'])
 def get_product_by_code():
-    code = request.args.get('code')
+    data = request.json
+    code = data.get('code')
     product = MainServec.get_product_by_code(code)
     return jsonify(product)
