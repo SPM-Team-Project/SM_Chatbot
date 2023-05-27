@@ -8,25 +8,29 @@ def get_by_id(cid):
 
 # TODO: for the @param->(cid) it should be auto generated
 # TODO: should find way to deal when we can not add customer
-def add(cid, name, address, email, password, phone):
-    new_customer = Customer(cid, name, address, email, password, phone)
+def add(name, address, email, phone):
+    new_customer = Customer(name, address, email, phone)
     db.session.add(new_customer)
+    db.session.commit()
+    return new_customer
 
 
 def add_by_object(customer):
     db.session.add(customer)
+    db.session.commit()
+
 
 def update(cid, name, address, email, password, phone):
     customer = get_by_id(cid)
     if name is not None:
-        customer.name = name
+        customer.c_name = name
     if address is not None:
-        customer.address = address
+        customer.c_address = address
     if email is not None:
-        customer.email = email
+        customer.c_email = email
     if password is not None:
-        customer.email = email
+        customer.password = password
     if phone is not None:
-        customer.phone = phone
-
+        customer.c_phone = phone
+    db.session.commit()
 # TODO: set functions for delete

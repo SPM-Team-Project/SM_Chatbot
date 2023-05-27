@@ -29,11 +29,11 @@ class Product(db.Model):
 
     p_id = db.Column(db.Integer, primary_key=True)
     category = db.Column(db.String(60))
-    stock = db.Column(db.String(60))
+    stock = db.Column(db.Integer)
     price = db.Column(db.Integer)
     size = db.Column(db.String(3))
     color = db.Column(db.String(60))
-    p_code = db.Column(db.Integer, primary_key=True)
+    p_code = db.Column(db.String(60), primary_key=True)
     e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
 
 
@@ -42,9 +42,9 @@ class Order(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     o_date = db.Column(db.Date)
-    o_shippingAddress = db.Column(db.String(250))
+    o_shippingaddress = db.Column(db.String(250))
     o_state = db.Column(db.String(250))
     o_total = db.Column(db.Float)
     o_number = db.Column(db.Integer, nullable=False)
-    cusID = db.Column(db.Integer, db.ForeignKey('customer.c_id'), nullable=False)
-    proID = db.Column(db.Integer, db.ForeignKey('product.p_id'), nullable=False)
+    cusid = db.Column(db.Integer, db.ForeignKey('customer.c_id'), nullable=False)
+    proid = db.Column(db.Integer, db.ForeignKey('product.p_id'), nullable=False)

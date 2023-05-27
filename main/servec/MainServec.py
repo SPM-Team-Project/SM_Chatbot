@@ -1,4 +1,5 @@
 from main.model import Modles
+from main.repository import CustomerRepository, OrderRepository
 import random
 
 
@@ -33,3 +34,35 @@ def get_product_by_code(code):
         return product
     else:
         return {'error': 'Product not found'}
+
+
+def make_order(data):
+    product_code = data.get('productCode')
+    product = Modles.Product.query.filter_by(p_code=product_code).first()
+    # can not find the product.
+    if product is None:
+        return {'error': 'Product not found!'}
+
+    # product is out of stock
+    if product.stock == 0:
+        return {'error': 'Product is out of stock'}
+
+    customer_name = data.get('customerName')
+    customer_address = data.get('customerAddress')
+    customer_phone = data.get('customerPhone')
+    customer_email = data.get('customerEmail')
+    customer = Modles.Customer.query.filter_by(c_email=customer_email).first()
+    # the customer is not in the database
+    if customer is None:
+        customer = CustomerRepository.add(customer_name, customer_address, customer_email, customer_phone)
+    order = OrderRepository.create_order(customer_address, customer, product)
+
+    if order is not None:
+        # the order is done:)
+        order_result = {
+
+        }
+        return order_result
+    else:
+        # an error
+        return {'error': 'can not make the order!'}
