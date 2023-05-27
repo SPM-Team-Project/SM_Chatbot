@@ -21,12 +21,15 @@ def get_three_random_products():
 
 def get_product_by_code(code):
     query_result = Modles.Product.query.filter_by(p_code=code).first()
-    product = {
-        'category': query_result.category,
-        'stock': query_result.stock,
-        'price': query_result.price,
-        'size': query_result.size,
-        'code': query_result.p_code,
-        'color': query_result.color
-    }
-    return product
+    if query_result is not None:
+        product = {
+            'category': query_result.category,
+            'stock': query_result.stock,
+            'price': query_result.price,
+            'size': query_result.size,
+            'code': query_result.p_code,
+            'color': query_result.color
+        }
+        return product
+    else:
+        return {'error': 'Product not found'}
