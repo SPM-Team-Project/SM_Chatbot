@@ -35,8 +35,6 @@ def get_product_by_code(code):
             'stock': query_result.stock
         }
         return product
-    else:
-        return None
 
 
 def make_order(data):
