@@ -21,6 +21,7 @@ class Customer(db.Model):
         self.c_phone = phone
         self.e_storename = "Shoies and bag"
 
+
 class EStore(db.Model):
     __tablename__ = 'e_store'
 

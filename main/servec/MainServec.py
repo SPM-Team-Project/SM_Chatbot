@@ -71,3 +71,18 @@ def make_order(data):
     else:
         # an error
         return {'error': 'can not make the order!'}
+
+
+def track_order(data):
+    order_code = data.get('orderCode')
+    query_result = Modles.Order.query.filter_by(o_number=order_code).first()
+    if query_result is None:
+        return {'error': {'can not find the order!'}}
+    order = {
+        'date': query_result.o_date,
+        'code': query_result.o_number,
+        'total': query_result.o_total,
+        'address': query_result.o_shippingaddress,
+        'state': query_result.o_state
+    }
+    return order

@@ -30,3 +30,10 @@ def make_order():
     data = request.json
     order = MainServec.make_order(data)
     return jsonify(order)
+
+
+@app.route('/marketChatbot/api/v1/trackOrder', methods=['POST'])
+def track_order():
+    data = request.json
+    order = MainServec.track_order(data)
+    return jsonify(order)
