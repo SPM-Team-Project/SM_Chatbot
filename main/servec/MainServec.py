@@ -2,7 +2,6 @@ from main.model import Modles
 from main.repository import CustomerRepository, OrderRepository
 import random
 
-
 def get_three_random_products():
     all_products = Modles.Product.query.all()
     random_products = random.sample(all_products, 3)
