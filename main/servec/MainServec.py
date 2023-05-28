@@ -14,7 +14,8 @@ def get_three_random_products():
                 'price': product.price,
                 'size': product.size,
                 'color': product.color,
-                'code': product.p_code
+                'code': product.p_code,
+                'stock': product.stock
             }
         }
         product_list.append(product_data)
@@ -30,7 +31,8 @@ def get_product_by_code(code):
             'price': query_result.price,
             'size': query_result.size,
             'code': query_result.p_code,
-            'color': query_result.color
+            'color': query_result.color,
+            'stock': query_result.stock
         }
         return product
     else:
