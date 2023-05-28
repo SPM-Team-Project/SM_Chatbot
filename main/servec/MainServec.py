@@ -35,6 +35,8 @@ def get_product_by_code(code):
             'stock': query_result.stock
         }
         return product
+    else:
+        return {'error': 'Product not found'}
 
 
 def make_order(data):
