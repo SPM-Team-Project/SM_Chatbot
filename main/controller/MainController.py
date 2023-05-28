@@ -25,7 +25,7 @@ def get_product_by_code():
     return jsonify(product)
 
 
-@app.route('/marketChatbot/api/v1/', methods=['POST'])
+@app.route('/marketChatbot/api/v1/newOrder', methods=['POST'])
 def make_order():
     data = request.json
     order = MainServec.make_order(data)

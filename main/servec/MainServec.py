@@ -13,7 +13,8 @@ def get_three_random_products():
                 'category': product.category,
                 'price': product.price,
                 'size': product.size,
-                'color': product.color
+                'color': product.color,
+                'code': product.p_code
             }
         }
         product_list.append(product_data)
@@ -60,7 +61,11 @@ def make_order(data):
     if order is not None:
         # the order is done:)
         order_result = {
-
+            'date': order.o_date,
+            'code': order.o_number,
+            'total': order.o_total,
+            'address': order.o_shippingaddress,
+            'state': order.o_state
         }
         return order_result
     else:
