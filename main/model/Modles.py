@@ -11,7 +11,7 @@ class Customer(db.Model):
     c_address = db.Column(db.String(60))
     c_email = db.Column(db.String(60), nullable=False)
     c_phone = db.Column(db.String(60))
-    e_storeName = db.Column(db.String(250), db.ForeignKey("e_store.name"))
+    e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
     orders = db.relationship('Order', backref='customer', lazy=True)
 
 
