@@ -13,7 +13,7 @@ def create_order(shipping_address, customer, product):
         o_shippingaddress=shipping_address,
         o_state='ordered',
         o_total=total,
-        o_number=random.randint(1, 100000000000),
+        o_number=random.randint(1, 10000000),
         cusid=cus_id,
         proid=product_id
     )
