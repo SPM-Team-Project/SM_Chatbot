@@ -1,5 +1,4 @@
-from main.model.Modles import Product
-from main.Main import db
+from main.model.Modles import Product, db
 
 
 # TODO: think about way to catch if the id is not found in DB

@@ -1,53 +1,57 @@
 from flask_sqlalchemy import SQLAlchemy
+
 db = SQLAlchemy()
 
 
 class Customer(db.Model):
-    __tablename__ = 'cusomer'
+    __tablename__ = 'customer'
 
-    id = db.Column(db.Integer, primary_key=True)
-    name = db.Column(db.String(55))
-    address = db.Column(db.String(255))
-    email = db.Column(db.String(55))
-    password = db.Column(db.String(55))
-    phone = db.Column(db.String(55))
+    c_id = db.Column(db.Integer, primary_key=True)
+    c_name = db.Column(db.String(60), nullable=False)
+    c_address = db.Column(db.String(60))
+    c_email = db.Column(db.String(60), nullable=False)
+    c_phone = db.Column(db.String(60))
+    e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
+    orders = db.relationship('Order', backref='customer', lazy=True)
 
-    def __init__(self, cid, name, address, email, password, phone):
-        self.id = cid
-        self.name = name
-        self.address = address
-        self.email = email
-        self.password = password
-        self.phone = phone
-
-
-class Product(db.Model):
-    __tablename__ = 'product'
-    id = db.Column(db.Integer, primary_key=True)
-    category = db.Column(db.String(255))
-    stock = db.Column(db.Integer)
-    price = db.Column(db.Double)
-    size = db.Column(db.String(5))
-    color = db.Column(db.String(55))
-
-    def __init__(self, pid, category, stock, price, size, color):
-        self.id = pid
-        self.category = category
-        self.stock = stock
-        self.price = price
-        self.size = size
-        self.color = color
+    def __init__(self, name, address, email, phone):
+        self.c_name = name
+        self.c_address = address
+        self.c_email = email
+        self.c_phone = phone
+        self.e_storename = "Shoies and bag"
 
 
-class Store(db.Model):
+class EStore(db.Model):
     __tablename__ = 'e_store'
 
     name = db.Column(db.String(60), primary_key=True)
     address = db.Column(db.String(60))
     phone_no = db.Column(db.String(60))
+    products = db.relationship('Product', backref='e_store', lazy=True)
 
-    def __init__(self):
-        pass
 
-    def __repr__(self):
-        return f'<Store {self.name}>'
+class Product(db.Model):
+    __tablename__ = 'product'
+
+    p_id = db.Column(db.Integer, primary_key=True)
+    category = db.Column(db.String(60))
+    stock = db.Column(db.Integer)
+    price = db.Column(db.Integer)
+    size = db.Column(db.String(3))
+    color = db.Column(db.String(60))
+    p_code = db.Column(db.String(60), primary_key=True)
+    e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
+
+
+class Order(db.Model):
+    __tablename__ = 'orders'
+
+    id = db.Column(db.Integer, primary_key=True)
+    o_date = db.Column(db.Date)
+    o_shippingaddress = db.Column(db.String(250))
+    o_state = db.Column(db.String(250))
+    o_total = db.Column(db.Float)
+    o_number = db.Column(db.Integer, nullable=False)
+    cusid = db.Column(db.Integer, db.ForeignKey('customer.c_id'), nullable=False)
+    proid = db.Column(db.Integer, db.ForeignKey('product.p_id'), nullable=False)
