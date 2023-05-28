@@ -36,7 +36,7 @@ def get_product_by_code(code):
         }
         return product
     else:
-        return {'error': 'Product not found'}
+        return None
 
 
 def make_order(data):
