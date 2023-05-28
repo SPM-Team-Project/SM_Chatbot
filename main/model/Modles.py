@@ -14,6 +14,12 @@ class Customer(db.Model):
     e_storename = db.Column(db.String(250), db.ForeignKey("e_store.name"))
     orders = db.relationship('Order', backref='customer', lazy=True)
 
+    def __init__(self, name, address, email, phone):
+        self.c_name = name
+        self.c_address = address
+        self.c_email = email
+        self.c_phone = phone
+        self.e_storename = "Shoies and bag"
 
 class EStore(db.Model):
     __tablename__ = 'e_store'
