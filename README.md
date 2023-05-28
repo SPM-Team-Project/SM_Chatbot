@@ -56,6 +56,7 @@ the software's features was being available incrementally.
 
 a) the functions available at the beginning of the project: 
 •	The software have access to specific information in account databases, enabling it to provide customers with information    they need to know, such as product availability, price, etc. 
+
 •	The program able to record user data.
 
 b) functions added during the development:
