@@ -75,66 +75,24 @@ Database ERD
 Database Schema with arrows 
 Use case diagram  
 Activity diagram
-*all upload on this ris
+*all upload on this repository
 
+________________________________________________________________________________
 
- 
-
-
-
-
-Deployment:
+# Deployment:
 As for running the software, we uploaded the data on Render.com , after we upload the data on the site, connect it and put the sql code, we upload the Python code to get hub and render will be taking the code from github, and from Render we do a deploy the software with the String Connection in the environment , then the Flask code It will work as an api, and this is how we have uploaded the data and flask code and networked them together. The chat bot is requesting an api request as a Jason file and it is receiving and sending a Jason file.
 
+________________________________________________________________________________
 
+# The tasks and responsibilities for each iteration:
 
-
-
-
-
-
-
-
-
-
-
-The tasks and responsibilities for each iteration:
-
-iter no/ developer	Mohamad amin (leader)	Ibrahim	musa	miad	Abd alhamid
-iter1	Searching for an idea	Searching for an idea	Searching for an idea	Searching for an idea	Searching for an idea
-iter2	Discuss ideas
-and chose one	Discuss ideas
-and chose one	Discuss ideas
-and chose one	Define requirements	Define requirements
-Iter3	Make table diagram	learning about database	learning about database	Make entity relationship diagram	learning about database
-Iter4	Upload the database on localhost server	Upload the database on localhost server	Upload the database on localhost server	Upload the database on localhost server	Upload the database on localhost server
-Iter5	Found the backend program	-	-	-	-
-Iter6	Learning the backend program	Learning the backend program	Learning the backend program	Learning the backend program	Learning the backend program
-Iter7	Making the config for backend	Make models for database managem-ent	Testing the config	Make models for database manageme-nt	Make controller for backend
-Iter8	learning the tool	learning the tool	learning the tool	connect flask with database	learning the tool
-
-
-
-
-
-
- 
-Iter9	learning the tool	Check the connection between flask and database	learning the tool	learning the tool	learning the tool
-Iter10	Uploading the program and the base on tunnel	Uploading the program and the base on tunnel	-	update requirements	-
-Iter11	Supervisor the chatbot building	Uploading the program and the base on tunnel	building the chatbot	Preparing all the projct docemmnt-s	building the chatbot
-Iter12	Supervisor the chatbot building	Connect the tool api with the project	building the chatbot	Preparing all the project docemmnt-s	building the chatbot
-Iter13	-	-	-	-	Testing the project
-Iter14	Discuss what can we add more	Discuss what can we add more	Discuss what can we add more	Discuss what can we add more	Discuss what can we add more
-Iter15	Publish the project	-	-	-	-
-
-
-Link for our tasks board on Trello:
+# Link for our tasks board on Trello:
 https://trello.com/invite/b/7hO1F9dJ/ATTI7e5e87dd3896725abbe8cdbbaaf0a778A55B6321/shopchatbot
 
+________________________________________________________________________________
 
 
-
-Risks and challenges encountered during development and how they were resolved:
+# Risks and challenges encountered during development and how they were resolved:
 
 •	One of the problems that our team faced during the development was related to flask struct since we are making a special api for a specific project, so flask strict is not one thing and then we had to do a restruct several times until the problem was solved.
 
@@ -151,44 +109,17 @@ Risks and challenges encountered during development and how they were resolved:
 
 •	Also, using traditional research methods while working on the project to find solutions was useless and a waste of time with no return. Learning new research methods accelerated work on the project and solved the problems that we faced as a team.
 
+________________________________________________________________________________
 
-
-
-
-
-
- 
-
-
-
-
-
-
-
-
-
-
-Software Testes:
+# Software Testes:
 Several programs have been tried to test programs, but what worked perfectly is the manual test, because there are some tools that did not work properly. We used the unittest library in Python, which worked correctly for flask testing. Also, the Framework Flask Testing were used.
 
+________________________________________________________________________________
 
+# Experience gained:
 
+# a) experience gained as a group:
 
-
- 
-
-
-
-
-
-
-
-
-
-
-
-Experience gained:
-a) experience gained as a group:
 •	Collaboration and Teamwork: Working in a development group provides ample opportunities to collaborate with other team members. You learn how to communicate effectively, share ideas, and work together towards a common goal. Collaboration helps improve problem-solving skills and fosters a supportive and productive work environment.
 •	Agile Methodologies: Many software development groups adopt agile methodologies such as Scrum or Kanban. These methodologies focus on iterative development, regular feedback, and continuous improvement. Through working in an agile environment, you gain experience in sprint planning, daily stand-ups, backlog grooming, and retrospectives, which enhances your ability to deliver high-quality software in a structured and efficient manner.
 •	Version Control and Collaboration Tools: Version control systems like Git and collaboration tools like JIRA and Confluence are integral to software development groups. Through their usage, you gain experience in managing code repositories, branching, merging, issue tracking, and knowledge sharing. These tools enhance team productivity and ensure smooth collaboration.
@@ -199,17 +130,7 @@ a) experience gained as a group:
 •	Overall, being part of a software development group offers valuable experiences that encompass technical skills, collaboration, problem-solving, and project management. These experiences contribute to your professional growth and make you a well-rounded software developer. 
 
 
-
-
-
-
-
-
-
-
-
-
-b) experience gained as individuals:
+# b) experience gained as individuals:
 
 •	Mohamed Amin Hejazi (Project Scrum Master):
 I learned from this project several things, one of which is how to upload the project to a public API and test it, how to upload the database to a public API and try it, and also how to deal with the API in general, and I learned a general idea about Flask alchemy which is generally considered a database manager, also my skill increased In the research, and as I'm the Project Scrum Master of my group I learned how to make a plan for the team, manage it, distribute tasks, and follow up on the progress of work on the project.
@@ -221,7 +142,6 @@ First, I gained a lot of experience in this project, most notably dealing with d
 I gained value experiences one of them how to work with a group on the same code easily and without problems by using git and github. I also learned to use a new tool for data base which is pgadmin. I also learned how to upload the project and upload the data base separately, and then link them, which enabled us to use the API and this was my first time that I have uploaded a project to the Internet and tested it.
 
 
-
 •	Abdulhamid Barakat: 
   By doing this project, I learned many experiences, the most important  that I learned to deal with chatbots, which was a new and useful experience for me. I learned how to train chatbots and how to make it as realistic as possible, and working on Flask and databases increased my knowledge and skills about them. 
 
@@ -230,6 +150,7 @@ First of all being a part of a software development team allows me to collaborat
 Secondly, I increased my skills in analyzing and solving problems by helping to find solutions to the problems that our team faced during development and applying these solutions.
 I also learned to work with Flask which was a unique addition to my knowledge, and I used the Flask alchemy library for managing database and I learned how to connect Flask with databases by add Flask alchemy library to the code and making a config for the database address. 
 
+________________________________________________________________________________
 
 
 
@@ -237,6 +158,3 @@ I also learned to work with Flask which was a unique addition to my knowledge, a
 
 
 
- 
-Link to the source code repository:
-https://github.com/SPM-Team-Project/Shop_Chatbot
