@@ -54,15 +54,20 @@ _______________________________________________________________________________
 Since this project was developed by using scrum method 
 the software's features was being available incrementally.
 
-a) the functions available at the beginning of the project: 
+a) the functions available at the beginning of the project:
+
 •	The software have access to specific information in account databases, enabling it to provide customers with information    they need to know, such as product availability, price, etc. 
 
 •	The program able to record user data.
 
 b) functions added during the development:
+
 •	The program able to generate invoices.
+
 •	The software able to send products to customers.
+
 •	The program able to responding and interacting with clients.
+
 •	It can automatically execute a specific set of orders based on customer requests.
 
 ________________________________________________________________________________
@@ -72,11 +77,17 @@ Our team was planning to add an interactive chatbot feature, not only to the sto
 ________________________________________________________________________________
 
 # Schemas and design documents relevant to project:
+
 Database ERD 
-Database Schema with arrows 
+
+Database Schema with arrows
+
 Use case diagram  
+
 Activity diagram
+
 *all upload on this repository
+
 
 ________________________________________________________________________________
 
@@ -121,13 +132,21 @@ ________________________________________________________________________________
 
 # a) experience gained as a group:
 
+
 •	Collaboration and Teamwork: Working in a development group provides ample opportunities to collaborate with other team members. You learn how to communicate effectively, share ideas, and work together towards a common goal. Collaboration helps improve problem-solving skills and fosters a supportive and productive work environment.
+
 •	Agile Methodologies: Many software development groups adopt agile methodologies such as Scrum or Kanban. These methodologies focus on iterative development, regular feedback, and continuous improvement. Through working in an agile environment, you gain experience in sprint planning, daily stand-ups, backlog grooming, and retrospectives, which enhances your ability to deliver high-quality software in a structured and efficient manner.
+
 •	Version Control and Collaboration Tools: Version control systems like Git and collaboration tools like JIRA and Confluence are integral to software development groups. Through their usage, you gain experience in managing code repositories, branching, merging, issue tracking, and knowledge sharing. These tools enhance team productivity and ensure smooth collaboration.
+
 •	Problem Solving and Troubleshooting: Software development often involves solving complex problems and debugging issues. Being part of a development group exposes you to various challenges that require critical thinking and analytical skills. You learn how to identify and resolve bugs, optimize code performance, and address technical issues effectively. 
+
 •	Quality Assurance and Testing: Software development groups emphasize the importance of quality assurance and testing. You gain experience in writing and executing test cases, performing unit tests, integration tests, and user acceptance tests. This experience helps you deliver software with fewer defects and ensures its reliability and robustness.
+
 •	Learning and Adaptability: The software development landscape is constantly evolving, with new technologies and frameworks emerging regularly. Being part of a development group requires continuous learning and adaptability. You gain experience in staying up-to-date with industry trends, exploring new technologies, and acquiring new skills to remain competitive in the field.
+
 •	Project Management: In a software development group, you may have opportunities to take on project management responsibilities, such as leading a development team, managing timelines and resources, and coordinating with stakeholders. This experience enhances your organizational and leadership skills, preparing you for future roles with more significant responsibilities.
+
 •	Overall, being part of a software development group offers valuable experiences that encompass technical skills, collaboration, problem-solving, and project management. These experiences contribute to your professional growth and make you a well-rounded software developer. 
 
 
