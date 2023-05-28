@@ -108,16 +108,22 @@ ________________________________________________________________________________
 
 •	One of the problems that our team faced during the development was related to flask struct since we are making a special api for a specific project, so flask strict is not one thing and then we had to do a restruct several times until the problem was solved.
 
+
 •	Another problem that we encountered during the development of the project was about the modules. Since initially we put each class separately from the other, the code gave us an error warning but the problem was solved when we re-created the modules together.
+
 
 •	We also went through problem while uploading the project to the online server due to problems related to render, so we added several classes that solved the problem.
 
+
 •	One of the most important challenges our team faced while developing the project was that we decided to use Mobile Monkey as an facebook chatbot But when we started working on it, we found that its ability to analyze messages was weak, and the most important thing is that they stopped the communication service between MobileMonkey and any other site via api, which forced us to search for another tool suitable for our project and this was available in the sendPulse tool that we used.
+
 
  
 •	Another challenge we faced was about how to connect the database to Flask, but after lengthy research and trying many solutions, we succeeded in making the connection by adding the Flask alchemy library to the code and making a config for the database address.
 
+
 •	Also, identifying the right task for the right person while managing the project team was a real challenge It was exceeded by increasing the team's communication with the leader, which led to the leader understanding the way each member of the team works and assigning him the appropriate task.
+
 
 •	Also, using traditional research methods while working on the project to find solutions was useless and a waste of time with no return. Learning new research methods accelerated work on the project and solved the problems that we faced as a team.
 
@@ -135,40 +141,58 @@ ________________________________________________________________________________
 
 •	Collaboration and Teamwork: Working in a development group provides ample opportunities to collaborate with other team members. You learn how to communicate effectively, share ideas, and work together towards a common goal. Collaboration helps improve problem-solving skills and fosters a supportive and productive work environment.
 
+
 •	Agile Methodologies: Many software development groups adopt agile methodologies such as Scrum or Kanban. These methodologies focus on iterative development, regular feedback, and continuous improvement. Through working in an agile environment, you gain experience in sprint planning, daily stand-ups, backlog grooming, and retrospectives, which enhances your ability to deliver high-quality software in a structured and efficient manner.
+
 
 •	Version Control and Collaboration Tools: Version control systems like Git and collaboration tools like JIRA and Confluence are integral to software development groups. Through their usage, you gain experience in managing code repositories, branching, merging, issue tracking, and knowledge sharing. These tools enhance team productivity and ensure smooth collaboration.
 
+
 •	Problem Solving and Troubleshooting: Software development often involves solving complex problems and debugging issues. Being part of a development group exposes you to various challenges that require critical thinking and analytical skills. You learn how to identify and resolve bugs, optimize code performance, and address technical issues effectively. 
+
 
 •	Quality Assurance and Testing: Software development groups emphasize the importance of quality assurance and testing. You gain experience in writing and executing test cases, performing unit tests, integration tests, and user acceptance tests. This experience helps you deliver software with fewer defects and ensures its reliability and robustness.
 
+
 •	Learning and Adaptability: The software development landscape is constantly evolving, with new technologies and frameworks emerging regularly. Being part of a development group requires continuous learning and adaptability. You gain experience in staying up-to-date with industry trends, exploring new technologies, and acquiring new skills to remain competitive in the field.
+
 
 •	Project Management: In a software development group, you may have opportunities to take on project management responsibilities, such as leading a development team, managing timelines and resources, and coordinating with stakeholders. This experience enhances your organizational and leadership skills, preparing you for future roles with more significant responsibilities.
 
+
 •	Overall, being part of a software development group offers valuable experiences that encompass technical skills, collaboration, problem-solving, and project management. These experiences contribute to your professional growth and make you a well-rounded software developer. 
+
 
 
 # b) experience gained as individuals:
 
 •	Mohamed Amin Hejazi (Project Scrum Master):
+
 I learned from this project several things, one of which is how to upload the project to a public API and test it, how to upload the database to a public API and try it, and also how to deal with the API in general, and I learned a general idea about Flask alchemy which is generally considered a database manager, also my skill increased In the research, and as I'm the Project Scrum Master of my group I learned how to make a plan for the team, manage it, distribute tasks, and follow up on the progress of work on the project.
 
+
 •	Musa Alaboud:
+
 First, I gained a lot of experience in this project, most notably dealing with different environments and how to link them. I also tested that there are problems that may occur because there are programs that are not compatible with other programs, and it will be useful if having a general background about the various environments and whether they are compatible with each other or not. I also learned how to do a project test and find defects in the program to fix them.
 
+
 •	ibrahim alroubh: 
+
 I gained value experiences one of them how to work with a group on the same code easily and without problems by using git and github. I also learned to use a new tool for data base which is pgadmin. I also learned how to upload the project and upload the data base separately, and then link them, which enabled us to use the API and this was my first time that I have uploaded a project to the Internet and tested it.
 
 
+
 •	Abdulhamid Barakat: 
+
   By doing this project, I learned many experiences, the most important  that I learned to deal with chatbots, which was a new and useful experience for me. I learned how to train chatbots and how to make it as realistic as possible, and working on Flask and databases increased my knowledge and skills about them. 
 
+
 •	Meaad Farag Bayuosef: 
+
 First of all being a part of a software development team allows me to collaborate with others on projects and I learn how to communicate effectively, share ideas, and work together to achieve common goals.
 Secondly, I increased my skills in analyzing and solving problems by helping to find solutions to the problems that our team faced during development and applying these solutions.
 I also learned to work with Flask which was a unique addition to my knowledge, and I used the Flask alchemy library for managing database and I learned how to connect Flask with databases by add Flask alchemy library to the code and making a config for the database address. 
+
 
 ________________________________________________________________________________
 
